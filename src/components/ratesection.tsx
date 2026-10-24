@@ -20,7 +20,7 @@ const RatesSection = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-2xl lg:text-5xl font-extrabold text-blue-800 text-center mb-10"
           >
-            How Orvexa Works
+            How Oasis Works
           </motion.h2>
 
           <div className="flex flex-col lg:flex-row items-center gap-10">
@@ -32,7 +32,7 @@ const RatesSection = () => {
               className="lg:w-1/2"
             >
               <p className="text-gray-700 text-lg leading-relaxed">
-                At <strong>Orvexa </strong>, we simplify access to the world of
+                At <strong>Oasis </strong>, we simplify access to the world of
                 crypto mining and digital asset growth.
                 <br />
                 <br />
@@ -79,7 +79,7 @@ const RatesSection = () => {
             transition={{ duration: 0.8 }}
             className="text-2xl lg:text-5xl font-extrabold text-blue-800 text-center mb-10"
           >
-            Why Orvexa ?
+            Why Oasis ?
           </motion.h2>
 
           <div className="flex flex-col lg:flex-row gap-12 items-center">
@@ -91,7 +91,7 @@ const RatesSection = () => {
               transition={{ duration: 0.9 }}
             >
               <p className="text-lg text-gray-800 leading-relaxed mb-6">
-                <strong>Orvexa </strong> is a global leader in crypto asset
+                <strong>Oasis </strong> is a global leader in crypto asset
                 management, offering a smart and secure way to mine top digital
                 currencies without stress. Our mining platform is built to
                 maximize returns using reliable technologies and industry-best
@@ -123,7 +123,7 @@ const RatesSection = () => {
               <div className="w-full h-[400px] lg:h-[480px] rounded-xl overflow-hidden shadow-lg">
                 <iframe
                   src="https://www.youtube.com/embed/OZPHtoiEGWI"
-                  title="Orvexa  Introduction"
+                  title="Oasis  Introduction"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="w-full h-full rounded-xl"

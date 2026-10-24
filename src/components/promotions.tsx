@@ -16,7 +16,7 @@ const Promotions = () => {
             Who We Are
           </h2>
           <p className="text-gray-800 text-lg leading-relaxed">
-            <strong>Orvexa </strong> is a pioneering digital asset management
+            <strong>Oasis </strong> is a pioneering digital asset management
             firm, established in 2018 to help individuals and organizations
             harness the full potential of cryptocurrency mining.
             <br />
@@ -27,7 +27,7 @@ const Promotions = () => {
             platform is built to support your financial growth.
             <br />
             <br />
-            At Orvexa , we’re not just mining coins — we’re building the future
+            At Oasis , we’re not just mining coins — we’re building the future
             of decentralized finance.
           </p>
         </motion.div>

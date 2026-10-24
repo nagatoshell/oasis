@@ -1,4 +1,3 @@
-
 // SupportBot.tsx
 
 declare global {
@@ -27,8 +26,7 @@ const SupportBot = () => {
 
     script.id = "tawk-script";
     script.async = true;
-    script.src =
-      "https://embed.tawk.to/6ac8d6d1937f8634c7862729/1k4g8e9or";
+    script.src = "https://embed.tawk.to/6ac8d6d1937f8634c7862729/1k4g8e9or";
     script.charset = "UTF-8";
     script.setAttribute("crossorigin", "*");
 
@@ -44,7 +42,7 @@ const SupportBot = () => {
       <div className="fixed bottom-[100px] left-5 z-[9999] flex flex-col items-center space-y-1">
         <button
           onClick={() => {
-            window.location.href = "mailto:Orvexa.inc@gmail.com";
+            window.location.href = "mailto:Oasisinvestments.company@yahoo.com";
           }}
           aria-label="Email Support"
           className="p-3 rounded-full shadow-lg bg-blue-800 hover:bg-blue-700 text-white transition"
@@ -52,9 +50,7 @@ const SupportBot = () => {
           <FaEnvelope size={18} />
         </button>
 
-        <span className="text-sm text-black font-bold">
-          Email Us
-        </span>
+        <span className="text-sm text-black font-bold">Email Us</span>
       </div>
     </>
   );

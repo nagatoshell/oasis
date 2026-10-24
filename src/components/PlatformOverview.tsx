@@ -57,7 +57,7 @@ const PlatformOverview = () => {
           transition={{ duration: 0.8 }}
           className="text-4xl lg:text-5xl font-extrabold text-blue-800 text-center mb-14"
         >
-          Why Choose Orvexa
+          Why Choose Oasis
         </motion.h2>
 
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -89,11 +89,11 @@ const PlatformOverview = () => {
         >
           <h3 className="text-3xl font-bold text-blue-800 mb-6">About Us</h3>
           <p className="text-lg text-gray-800 leading-relaxed">
-            Orvexa offers a unique opportunity to grow your income through
-            crypto mining and participation in high-performance mining pools.
-            Our platform uses proof-of-mining mechanisms and cloud technologies
-            to validate blockchain transactions and generate capital securely
-            and efficiently.
+            Oasis offers a unique opportunity to grow your income through crypto
+            mining and participation in high-performance mining pools. Our
+            platform uses proof-of-mining mechanisms and cloud technologies to
+            validate blockchain transactions and generate capital securely and
+            efficiently.
             <br />
             <br />
             By working in two powerful directions—on-chain validation and
@@ -113,7 +113,7 @@ const PlatformOverview = () => {
         >
           <h3 className="text-3xl font-bold text-blue-800 mb-6">Our Roadmap</h3>
           <p className="text-lg text-gray-800 leading-relaxed">
-            Orvexa is leading the global fintech revolution with one of the
+            Oasis is leading the global fintech revolution with one of the
             world's most trusted social mining platforms. With thousands of
             registered users and an expanding ecosystem of crypto-earning tools,
             we're reshaping the way people earn, manage, and multiply digital

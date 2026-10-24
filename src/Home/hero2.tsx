@@ -21,7 +21,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-gray-700 mb-6 text-base lg:text-lg">
-              Orvexa bridges modern banking with crypto mining innovation. Fund
+              Oasis bridges modern banking with crypto mining innovation. Fund
               your account and earn up to <strong>4× Bitcoin rewards</strong>{" "}
               through cloud mining, enjoy <strong>3× returns</strong> on
               staking, and receive <strong>2× daily payouts</strong>

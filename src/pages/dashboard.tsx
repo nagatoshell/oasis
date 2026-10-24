@@ -316,7 +316,7 @@ const Dashboard = () => {
                 <FaArrowAltCircleRight className="text-blue-600" />
               </div>
               <div>
-                <p className="font-medium">Orvexa Mining Plan</p>
+                <p className="font-medium">Oasis Mining Plan</p>
                 <p className="text-sm text-gray-500">
                   Start earning crypto daily with automated mining solutions
                 </p>
@@ -334,7 +334,7 @@ const Dashboard = () => {
           <div className="bg-white rounded-xl shadow overflow-hidden">
             {/* Header */}
             <div className="bg-blue-800 text-white px-5 py-3 text-xl font-semibold">
-              Orvexa
+              Oasis
             </div>
 
             {/* Main Content */}
@@ -462,7 +462,7 @@ const Dashboard = () => {
 
                 <p className="text-xs text-gray-500 text-center">
                   This dashboard displays the most up-to-date status of your
-                  earnings with Orvexa 's Crypto Mining Program.
+                  earnings with Oasis 's Crypto Mining Program.
                   <br />
                   Your mining contribution has been securely verified and
                   processed on our blockchain network. For assistance or to
